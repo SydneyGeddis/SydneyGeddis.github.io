@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*** Beginning of Header Section ***/
+
+header {
+  background-color: #003e5e;
+  height: 10vh;
+  background-position: center;
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+
+  color: #e6e6e6;
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+
+header nav {
+  grid-column: 3 / -1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 60px;
+  display: inline;
+  height: 40px;
+  transition: 0.3s ease;
+  padding-right: 0px;
+  padding-top: 2px;
+  font-size: 18px;
+}
+
+header nav a:hover {
+  opacity: 0.6;
+  padding: 5px;
+  border-bottom: 4px solid #fff;
+  cursor: pointer;
+}
+
+header .brand {
+  margin-left: 15%;
+}
+
+
+/*** Dropdown Button ***/
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 60px;
+  display: inline;
+  height: 40px;
+  transition: 0.3s ease;
+  padding-right: 0px;
+  font-size: 18px;
+}
+
+/*** The container <div> - needed to position the dropdown content ***/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/*** Dropdown Content (Hidden by Default) ***/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 450px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/*** Links Inside the Dropdown ***/
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/*** Change Color of Dropdown Links on Hover ***/
+.dropdown-content a:hover {background-color: #ddd;}
+
+/*** Show the Dropdown Menu on Hover ***/
+.dropdown:hover .dropdown-content {display: block;}
+
+/***End of Header Section ***/
+
+.department {
+  position: relative;
+  display: table;
+
+  height: 100vh;
+  width: 100%;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #003e5e;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #003e5e;
+}
+
+h2 {
+  font-size: 20px;
+  color: #e6e6e6;
+  padding-top: 10px;
+}
+
+/*** Beginning of About Section ***/
+
+.content {
+  background-color: #e6e6e6;
+  padding-right: 70px;
+  padding-left: 70px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+.content p {
+  color: #003e5e;
+  font-size: 20px;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+/*** End of About Section ***/
+
+/*** Beginning of Staff Section ***/
+
+#staff {
+  background-color: #003e5e;
+  padding-top: 20px;
+}
+
+.staff-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  padding: 30px 30px 30px 30px;
+  background-color: #003e5e;
+}
+
+.staff-content h1 {
+  color: #e6e6e6;
+}
+
+.staff-members img {
+  max-width: 100%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+/*** End of Staff Section ***/
+
+/*** Beginning of Contact Section ***/
+
+#section {
+  padding: 0px;
+  background-color: #e6e6e6;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: #003e5e;
+  text-align: center;
+  padding-right: 40px;
+  margin-left: 75px;
+  font-size: 40px;
+}
+
+#contact {
+  background-color: #e6e6e6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #003e5e;
+  padding-top: 20px;
+}
+
+#contact input {
+  width: 100%;
+  padding: 20px 15px;
+  border:0px solid;
+  border-bottom:3px solid #003e5e;
+  display: block;
+  margin-bottom: 30px;
+
+}
+
+#email {
+  background-color: #e6e6e6;
+}
+
+.submit-btn {
+  width: 200px !important;
+  background-color:#003e5e;
+  border:none !important;
+  border-radius: 3%;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 15px 60px;
+  color:#e6e6e6;
+  margin: 40px auto;
+
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.submit-btn:hover {
+  background-color: rgb(81, 143, 172);
+  cursor: pointer;
+}
+
+/*** End of Contact Section ***/
+
+/*** Beginning of Footer Section ***/
+
+footer {
+  background-color: #003e5e;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  height: 50px;
+  padding-bottom: 160px;
+  padding-top: 80px;
+  padding-left: 60px;
+}
+
+.footer-logo {
+  padding-top: 40px;
+}
+
+.footer-content {
+  color: #e6e6e6;
+  text-align: center;
+  float: right;
+  padding-right: 0px;
+  padding-left: 420px;
+  padding-top: 13px;
+}
+
+.footer-content h4 {
+  padding-left: 39px;
+  padding-right: 42px;
+}
+
+.footer-content i {
+  font-size: 30px;
+}
+
+.footer-content i:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.footer-content a {
+  color: #e6e6e6;
+  
+}
+
+/*** End of Footer Section ***/
+
+/*** Beginning of Media Queries ***/
+
+@media screen and (min-width: 768px) {
+  .content {
+    background-color: #e6e6e6;
+
+  }
+  
+}
+
+@media screen and (max-width: 1060px) {
+  
+  .content {
+    background-color: #a0c8dd;
+  }
+
+  #contact {
+    background-color: #a0c8dd;
+    padding-right: 50px;
+    padding-left: 20px;
+  }
+
+  #email {
+    background-color: #a0c8dd;
+  }
+
+  #contact h3 {
+    font-size: 28px;
+    padding-right: 70px;
+  }
+
+}
+
+/*** End of Media Queries ***/
+
+/*** Beginning of Course Pages ***/
+
+#animationinfo, #creativeinfo, #digitalinfo, #webinfo, #interactiveinfo {
+  background-color: #e6e6e6;
+  padding-left: 120px;
+  padding-right: 100px;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 60px;
+}
+
+#animationinfo p, #creativeinfo p, #digitalinfo p, #webinfo p, #interactiveinfo p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  color: #003e5e;
+}
+
+
+#animationinfo img, #digitalinfo img, #webinfo img, #interactiveinfo img {
+  grid-column: -2 / 4;
+  display: inline-block;
+  max-width: 100%;
+  height: 60vh;
+  padding-top: 5px;
+  padding-left: 200px;
+}
+
+.animation-contents, .creative-contents, .digital-contents, .web-contents, .interactive-contents {
+  background-color: #e6e6e6;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.animation-contents h1, .creative-contents h1, .digital-contents h1, .web-contents h1, .interactive-contents h1 {
+  font-size: 40px;
+}
+
+h5, h6 {
+  font-size: 25px;
+  color: #003e5e;
+  font-weight: bold;
+}
+
+h6 {
+  padding-top: 37px;
+}
+
+/*** End of Course Pages ***/
